@@ -69,5 +69,122 @@
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
     <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="program">
+      <div class="program__wrapper">
+        <form class="program__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="program__about-cat">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <div class="program__block">
+              <label class="program__cat-name-label" for="program-cat-name-field">Имя:*</label>
+              <input class="program__cat-name" name="cat-name" type="text" id="program-cat-name-field"
+                placeholder="Барсик">
+            </div>
+            <div class="program__block">
+              <label class="program__cat-weight-label" for="program-cat-weight-field">Вес (кг):*</label>
+              <input class="program__cat-weight" name="cat-weight" type="number" id="program-cat-weight-field" placeholder="7">
+            </div>
+            <div class="program__block">
+              <label class="program__cat-age-label" for="program-cat-height-field">Возраст (лет):</label>
+              <input class="program__cat-age" name="cat-height" type="number" id="program-cat-height-field" placeholder="7">
+            </div>
+          </fieldset>
+          <fieldset class="program__categories">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program__categories-list radio-form">
+              <li class="program__categories-item radio-form__item">
+                <input class="visually-hidden radio-form__input" name="categories-group" type="radio" id="program-slim" value="slim" checked>
+                <label for="program-slim">Похудение</label>
+              </li>
+              <li class="program__categories-item radio-form__item">
+                <input class="visually-hidden radio-form__input" name="categories-group" type="radio" id="program-pro" value="pro">
+                <label for="program-pro">Набор массы</label>
+              </li>
+              <li class="program__categories-item radio-form__item">
+                <input class="visually-hidden radio-form__input" name="categories-group" type="radio" id="program-unknown" value="unknown">
+                <label for="program-unknown">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__contacts">
+            <legend class="program__legend">Контактные данные (владельца кота)</legend>
+            <div class="program__block">
+              <label class="program__email-label" for="program-email-field">E-mail:*</label>
+              <input class="program__email" name="email" type="email" id="program-email-field" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="program__block">
+              <label class="program__phone-label" for="program-phone-field">Телефон:*</label>
+              <input class="program__phone" name="phone" type="tel" id="program-phone-field" placeholder="8 (960) 900-60-90">
+            </div>
+          </fieldset>
+          <fieldset class="program__comment">
+            <legend class="program__legend">Комментарий</legend>
+            <textarea class="program__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program__extra">
+            <legend class="program__legend">Дополнительно</legend>
+            <ul class="program__extra-list checkbox-form">
+              <li class="program__extra-item checkbox-form__item">
+                <input class="visually-hidden checkbox-form__input" name="sweetener" type="checkbox" id="extra-sweetener" checked>
+                <label for="extra-sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="program__extra-item checkbox-form__item">
+                <input class="visually-hidden checkbox-form__input" name="water" type="checkbox" id="extra-water">
+                <label for="extra-water">Питьевая вода</label>
+              </li>
+              <li class="program__extra-item checkbox-form__item">
+                <input class="visually-hidden checkbox-form__input" name="milk" type="checkbox" id="extra-milk">
+                <label for="extra-milk">Молоко</label>
+              </li>
+              <li class="program__extra-item checkbox-form__item">
+                <input class="visually-hidden checkbox-form__input" name="vitamins" type="checkbox" id="extra-vitamins">
+                <label for="extra-vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="program__block">
+          <button class="program__button" type="submit">Отправить заявку</button>
+          <p class="program__footnote">* — Обязательные поля</p>
+        </div>
+        </form>
+      </div>
+    </section>
   </main>
+
+  <footer class="page-footer">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__adress">
+          <p class="contacts__adress-title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress-subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <figure class="contacts__map">
+          <img src="https://via.placeholder.com/320x362">
+        </figure>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__title">
+        <b>Cat</b>
+        energy
+        </h1>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <img src="https://via.placeholder.com/27x34">
+      </div>
+    </div>
+  </footer>
 </body>
