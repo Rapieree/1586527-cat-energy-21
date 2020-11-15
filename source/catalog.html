@@ -54,19 +54,18 @@
       <div class="site-nav__wrapper">
         <ul class="site-nav__list">
           <li class="site-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="site-nav__link" href="index.html">Главная</a>
           </li>
           <li class="site-nav__item site-nav__item--active">
-            <a>Каталог продукции</a>
+            <a class="site-nav__link">Каталог продукции</a>
           </li>
           <li class="site-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-
   <main class="page-main">
     <h1 class="page-main__title">Каталог продукции</h1>
     <section class="catalog">
@@ -219,7 +218,6 @@
             </table>
             <a href="#">Заказать</a>
           </li>
-
           <li class="catalog__item catalog__item--more">
             <h2 class="catalog__product-title">Показать еще 100500 товаров</h2>
             <p class="catalog__product-subtitle">На самом деле вкусов гораздо больше!</p>
@@ -228,19 +226,89 @@
         </ul>
       </div>
     </section>
-
     <section class="extra-products">
       <div class="extra-products__wrapper">
         <h2 class="extra-products__title">Дополнительные товары</h2>
         <ul class="extra-products__list">
           <li class="extra-products__item">
-            <h3></h3>
+            <h3>Сахарозаменитель</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 упаковка (100 г)</p>
+              <p class="extra-products__price">200 Р.</p>
+            </div>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3>Питьевая вода</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">5 литров</p>
+              <p class="extra-products__price">50 Р.</p>
+            </div>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3>Молоко</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 литр</p>
+              <p class="extra-products__price">100 Р.</p>
+            </div>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3>Витамины</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 упаковка (30 г)</p>
+              <p class="extra-products__price">300 Р.</p>
+            </div>
+            <a href="#">Заказать</a>
           </li>
         </ul>
       </div>
     </section>
+    <aside class="gift">
+      <div class="gift__wrapper">
+        <a class="gift__link" href="#">
+          <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
+        </a>
+      </div>
+    </aside>
   </main>
-
+  <footer class="page-footer">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <div class="contacts__adress">
+          <p class="contacts__adress-title">приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__adress-subtitle">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <figure class="contacts__map">
+          <img src="https://via.placeholder.com/320x362">
+        </figure>
+      </div>
+    </section>
+    <div class="page-footer__wrapper">
+      <p class="page-footer__title">
+        <b>Cat</b>
+        energy
+      </p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <img src="https://via.placeholder.com/27x34">
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
