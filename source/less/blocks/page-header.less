@@ -1,0 +1,44 @@
+// page-header
+.page-header {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+}
+
+.page-header__logo {
+  padding-top: 12px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    display: flex;
+  }
+}
+
+.page-header__logo-text-link {
+  justify-self: center;
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+  }
+}
+
+.page-header__menu {
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
+}
+
+.page-header__menu-button {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

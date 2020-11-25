@@ -1,0 +1,159 @@
+.program-teaser {
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 302px;
+    //  linear-gradient(to top, @background-green, @background-green),
+    background-image: linear-gradient(to top, @background-green, @background-green), url("../../img/teaser-cat-mobile.jpg");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+    @media (min-width: @desktop-width) {
+      display: block;
+      left: 50%;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      height: 696px;
+      background-image: linear-gradient(to top, @background-green, @background-green), url("../../img/teaser-cat-desktop.jpg");
+      background-size: cover;
+      background-position: left;
+    }
+  }
+}
+
+.program-teaser__wrapper {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 27px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 62px;
+    padding-left: 83px;
+    min-height: 872px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    padding-left: 80px;
+    min-height: 585px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: calc(50% - 140px);
+    width: 280px;
+    height: 270px;
+    background-image: url("../../img/teaser-food-mobile.png");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      width: 709px;
+      height: 609px;
+      left: calc(50% - 702px / 2);
+      top: auto;
+      bottom: 0;
+      background-image: url("../../img/teaser-food-tablet.png");
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 552px;
+      height: 499px;
+      left: calc(50% - 162px);
+      top: 0;
+      bottom: auto;
+      background-image: url("../../img/teaser-food-desktop.png");
+    }
+  }
+}
+
+.program-teaser__title {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  margin-bottom: 25px;
+  .main-font(regular);
+  font-size: 36px;
+  line-height: 36px;
+  color: @extra-color-text;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    max-width: 415px;
+    font-size: 60px;
+    line-height: 60px;
+    color: @main-color-text;
+    margin-bottom: 41px;
+    text-align: left;
+  }
+}
+
+.program-teaser__subtitle {
+  margin: 0;
+  padding: 0;
+  .main-font(regular);
+  font-size: 14px;
+  line-height: 14px;
+  color: @extra-color-text;
+  text-transform: uppercase;
+  text-align: center;
+  flex: 1 1 313px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @main-color-text;
+    text-align: left;
+    margin-bottom: 49px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+}
+
+.program-teaser__link {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: block;
+  .main-font(regular);
+  font-size: 14px;
+  line-height: 18px;
+  color: @extra-color-text;
+  text-decoration: none;
+  background-color: @main-button-color;
+  text-transform: uppercase;
+  text-align: center;
+  flex: 0 0 auto;
+
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+
+
