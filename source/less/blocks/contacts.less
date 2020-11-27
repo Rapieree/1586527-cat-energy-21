@@ -10,8 +10,8 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: @tablet-width) {
-    padding-top: 66px;
-    padding-bottom: 51px;
+    padding-top: 64px;
+    padding-bottom: 57px;
     padding-left: 71px;
     padding-right: 71px;
   }
@@ -35,14 +35,15 @@
     width: 140px;
     .main-font(regular);
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
     text-transform: uppercase;
     justify-self: self-start;
+
 
     @media (min-width: @tablet-width) {
       width: 171px;
       font-size: 20px;
-      line-height: 21px;
+      line-height: 25px;
     }
   }
 
@@ -62,6 +63,13 @@
       line-height: 20px;
       text-align: right;
     }
+  }
+}
+
+.contacts__adress-subtitle-street {
+  @media (min-width: @tablet-width) {
+  display: block;
+  margin-bottom: 20px;
   }
 }
 

@@ -7,10 +7,30 @@
   gap: 34px;
 
   @media (min-width: @tablet-width) {
+    margin-left: 20px;
     flex-wrap: nowrap;
+    gap: 24px;
+    align-items: flex-end;
   }
 }
 
-.social__picture-path {
-  stroke: @special-color-gray-2;
+.social__picture--vk {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__picture--instagram {
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__picture--facebook {
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 29px;
+  }
 }
