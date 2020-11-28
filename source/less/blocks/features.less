@@ -1,5 +1,22 @@
 .features {
   margin-bottom: 42px;
+
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 47px;
+    margin-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background-color: @border-menu-gray;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
 
 .features__title {
@@ -11,9 +28,9 @@
   line-height: 40px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 32px;
   }
 }
 
@@ -25,13 +42,16 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    padding-right: 74px;
     row-gap: 37px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: max-content max-content max-content max-content;
     justify-content: space-between;
+    padding-right: 0;
   }
 }
 
@@ -40,7 +60,7 @@
     box-sizing: border-box;
     min-height: 280px;
     padding-top: 40px;
-    padding-bottom: 57px;
+    padding-bottom: 40px;
     max-width: 250px;
     position: relative;
   }
@@ -106,7 +126,7 @@
       float: none;
       display: block;
       margin: 0;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -134,7 +154,7 @@
       float: none;
       display: block;
       margin: 0;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -162,7 +182,7 @@
       float: none;
       display: block;
       margin: 0;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -190,7 +210,7 @@
       float: none;
       display: block;
       margin: 0;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
   }
 }
