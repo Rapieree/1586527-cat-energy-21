@@ -1,0 +1,665 @@
+.program {
+  .main-font(regular);
+  font-size: 16px;
+}
+
+.program__columns {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+// Анкета о коте
+
+.program__about-cat {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 20px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.program__block {
+  display: flex;
+  align-items: center;
+}
+
+.program__cat-name-label, .program__cat-weight-label, .program__cat-age-label {
+  .main-font(regular);
+  line-height: 18px;
+  color: @special-color-gray;
+  text-transform: uppercase;
+  margin-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+}
+
+.program__cat-name, .program__cat-weight, .program__cat-age {
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  .main-font(regular);
+  line-height: 18px;
+  flex-grow: 1;
+  border: 1px solid @border-gray-2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+  }
+
+  &::placeholder {
+    .main-font(regular);
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-color-gray;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+// Выбор программы
+
+.program__categories {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 23px;
+    box-sizing: border-box;
+    border: 1px solid @border-gray-2;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: @border-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      width: 100vw;
+      height: 1px;
+      background-color: @border-gray;
+    }
+  }
+}
+
+.program__categories-radio-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 28px;
+  }
+}
+
+.program__categories-radio-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.program__categories-label {
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-dark;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program__categories-input + label {
+  position: relative;
+  &::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: -45px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid @border-color;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+      left: -60px;
+    }
+  }
+}
+
+.program__categories-input:checked + label {
+  &::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: -37px;
+    content: "";
+    width: 13.5px;
+    height: 13.5px;
+    border-radius: 50%;
+    background-color: @basic-green;
+
+    @media (min-width: @tablet-width) {
+      width: 18px;
+      height: 18px;
+      left: -49px;
+    }
+  }
+}
+
+// Общие заголовки блоков
+.program__legend {
+  margin: 0;
+  padding: 0;
+  .main-font(regular);
+  font-size: 24px;
+  line-height: 26px;
+  color: @main-color-text;
+  position: relative;
+  display: inline-block;
+  max-width: 185px;
+
+  @media (min-width: @tablet-width) {
+    max-width: inherit;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: @basic-green;
+    position: absolute;
+    top: 16px;
+    left: calc(100% + 22px);
+    width: calc(100vw - 100% - 20px - 22px);
+
+    @media (min-width: @tablet-width) {
+      width: calc(100vw - 100% - 70px - 40px);
+      left: calc(100% + 40px);
+      top: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: calc(100vw - 100% - 110px - 40px);
+      left: calc(100% + 40px);
+      top: 18px;
+    }
+  }
+
+  &::before {
+    content: "";
+    height: 1px;
+    background-color: @basic-green;
+    position: absolute;
+    top: 22px;
+    width: 30px;
+    right: calc(100% + 40px);
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      top: 18px;
+    }
+  }
+}
+
+// Контакты владельца кота
+
+.program__contacts {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 76px;
+    row-gap: 20px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
+}
+
+.program__email-label {
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-gray;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 0.44;
+  }
+
+  position: relative;
+  &::before {
+    content: "";
+    width: 18px;
+    height: 13px;
+    position: absolute;
+    right: 16px;
+    top: calc(50% - 8px);
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.program__phone-label {
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-gray;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 0.42;
+  }
+
+  position: relative;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 13px;
+    top: calc(50% - 11px);
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.program__email {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 45px;
+  margin-left: 12px;
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-gray;
+  flex-grow: 1;
+  border: 1px solid @border-gray-2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    margin-left: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+  }
+
+  &::placeholder {
+    .main-font(regular);
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-color-gray;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.program__phone {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 45px;
+  margin-left: 9px;
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-gray;
+  flex-grow: 1;
+  border: 1px solid @border-gray-2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    margin-left: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 15px;
+  }
+
+  &::placeholder {
+    .main-font(regular);
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-color-gray;
+    text-transform: uppercase;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+// Блок комментария
+
+.program__comment {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+  padding-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 76px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 68px;
+    margin-bottom: 67px;
+  }
+}
+
+.program__comment-text {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  padding-right: 12px;
+  display: block;
+  width: 100%;
+  height: 150px;
+  box-sizing: border-box;
+  resize: none;
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-color-gray;
+  border: 1px solid @border-gray-2;
+
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 10px;
+    height: 174px;
+  }
+
+  &::placeholder {
+    .main-font(regular);
+    font-size: 16px;
+    line-height: 18px;
+    color: @special-color-gray;
+    text-transform: uppercase;
+
+    @media(min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
+}
+
+// Дополнительные товары
+
+.program__extra {
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 34px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
+}
+
+.program__extra-checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+    padding-right: 24px;
+  }
+}
+
+.program__extra-checkbox-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.program__extra-label {
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 18px;
+  color: @main-color-text;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program__extra-input + label {
+  position: relative;
+
+  &::before {
+    content: "";
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @border-color;
+    position: absolute;
+    left: -46px;
+    top: -3px;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+      left: -59px;
+      top: -5px;
+    }
+  }
+}
+
+.program__extra-input:checked + label {
+  &::after {
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/icon-checkbox.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+
+    @media (min-width: @tablet-width) {
+      top: 7px;
+      left: -48px;
+    }
+  }
+}
+
+// Кнопка отправить
+
+.program__button-block {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 21px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 81px;
+    margin-bottom: 82px;
+  }
+}
+
+.program__button {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .main-font(regular);
+  font-size: 16px;
+  line-height: 20px;
+  color: @extra-color-text;
+  text-transform: uppercase;
+  border: none;
+  background-color: @basic-green;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    line-height: 26px;
+  }
+}
+
+.program__footnote {
+  margin: 0;
+  padding: 0;
+  .extra-font();
+  font-size: 14px;
+  line-height: 16px;
+  color: @main-color-text;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    align-self: center;
+  }
+}
