@@ -118,6 +118,26 @@
   }
 }
 
+.product-categories__item-link:hover {
+  padding-right: 53px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 64px;
+  }
+
+  &::after {
+    width: 24px;
+  }
+}
+
+.product-categories__item-link:active {
+  opacity: 0.3;
+}
+
 .product-categories__item--slim {
   position: relative;
   &::before {

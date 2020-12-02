@@ -1,0 +1,42 @@
+.gift {
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  padding-top: 187px;
+  height: 289px;
+  background-image: url("../img/gift-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 58px;
+    left: calc(50% - 78px / 2);
+    z-index: 1;
+  }
+}
+
+.gift__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.gift__title {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  .extra-font();
+  font-size: 16px;
+  line-height: 20px;
+  color: @extra-color-text;
+  width: 161px;
+  text-align: center;
+}
