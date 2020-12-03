@@ -31,6 +31,10 @@
   display: block;
   background-color: transparent;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .site-nav-menu__button--open {
@@ -58,7 +62,7 @@
     position: relative;
     &::before {
       content: "";
-      width: 100vw;
+      width: calc(100% + 40px);
       height: 1px;
       background-color: @border-menu-gray;
       position: absolute;
@@ -93,6 +97,14 @@
     padding: 0;
     letter-spacing: -0.03em;
   }
+}
+
+.site-nav-menu__item:not(.site-nav-menu__item--current):not(.site-nav-menu__item--current-desktop-unique):hover {
+  opacity: 0.6;
+}
+
+.site-nav-menu__item:not(.site-nav-menu__item--current):not(.site-nav-menu__item--current-desktop-unique):active {
+  opacity: 0.3;
 }
 
 .site-nav-menu--desktop-unique a {

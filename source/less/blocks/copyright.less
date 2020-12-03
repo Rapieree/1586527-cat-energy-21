@@ -14,3 +14,19 @@
   color: @special-color-gray;
   text-decoration: none;
 }
+
+.copyright__link:hover .copyright__img-path {
+  fill: @basic-green;
+}
+
+.copyright__link:hover + .copyright__link .copyright__img-path {
+  fill: @basic-green;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+.copyright__link:active + .copyright__link .copyright__img-path {
+  opacity: 0.3;
+}

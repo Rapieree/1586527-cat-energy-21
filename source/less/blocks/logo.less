@@ -1,14 +1,23 @@
 .logo__picture-link {
   width: min-content;
   height: min-content;
+  cursor: pointer;
 }
 
 .logo__text-link {
   width: min-content;
   height: min-content;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     height: 19px;
   }
+}
 
+.logo__picture-link:hover, .logo__text-link:hover {
+  opacity: 0.8;
+}
+
+.logo__picture-link:active, .logo__text-link:active {
+  opacity: 0.6;
 }

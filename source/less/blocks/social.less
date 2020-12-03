@@ -34,3 +34,16 @@
     height: 29px;
   }
 }
+
+.social__link:not(.social__link--facebook):hover .social__picture-path {
+  fill: @basic-green;
+}
+
+.social__link.social__link--facebook:hover .social__picture-path {
+  stroke: @basic-green;
+}
+
+.social__link:active .social__picture-path {
+  opacity: 0.3;
+}
+
