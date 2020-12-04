@@ -19,10 +19,15 @@
     z-index: -1;
     height: 302px;
     //  linear-gradient(to top, @background-green, @background-green),
+
     background-image: linear-gradient(to top, @background-green, @background-green), url("../img/teaser-cat-mobile.jpg");
     background-repeat: no-repeat no-repeat;
     background-size: contain;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, @background-green, @background-green), url("../img/teaser-cat-mobile@2x.jpg");
+    }
 
     @media (min-width: @tablet-width) {
       display: none;
@@ -37,6 +42,10 @@
       background-image: linear-gradient(to top, @background-green, @background-green), url("../img/teaser-cat-desktop.jpg");
       background-size: cover;
       background-position: left;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, @background-green, @background-green), url("../img/teaser-cat-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -74,6 +83,10 @@
     background-position: center;
     z-index: -1;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/teaser-food-mobile@2x.png");
+    }
+
     @media (min-width: @tablet-width) {
       width: 709px;
       height: 609px;
@@ -81,6 +94,10 @@
       top: auto;
       bottom: 0;
       background-image: url("../img/teaser-food-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/teaser-food-tablet@2x.png");
+      }
     }
 
     @media (min-width: @desktop-width) {
@@ -90,6 +107,10 @@
       top: 22px;
       bottom: auto;
       background-image: url("../img/teaser-food-desktop.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/teaser-food-desktop@2x.png");
+      }
     }
   }
 }
