@@ -10,16 +10,20 @@
 .copyright__link {
   .extra-font();
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1px;
   color: @special-color-gray;
   text-decoration: none;
 }
 
-.copyright__link:hover .copyright__img-path {
+.copyright__img {
+  fill: @special-color-gray-2;
+}
+
+.copyright__link:hover .copyright__img, .copyright__link:focus .copyright__img {
   fill: @basic-green;
 }
 
-.copyright__link:hover + .copyright__link .copyright__img-path {
+.copyright__link:hover + .copyright__link .copyright__img, .copyright__link:focus + .copyright__link .copyright__img {
   fill: @basic-green;
 }
 
@@ -27,6 +31,6 @@
   opacity: 0.3;
 }
 
-.copyright__link:active + .copyright__link .copyright__img-path {
+.copyright__link:active + .copyright__link .copyright__img {
   opacity: 0.3;
 }

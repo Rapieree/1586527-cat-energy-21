@@ -10,16 +10,20 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 16px;
-    width: 440px;
+    margin-right: -16px;
+    width: 59.5vw;
+    // width: 440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 478px;
-    padding-top: 17px;
+    width: 34.4vw;
+  }
+
+  @media (min-width: @max-width) {
+    width: 661px;
   }
 }
 
@@ -39,9 +43,9 @@
 
 .site-nav-menu__button--open {
   @media (max-width: @mobile-width-only) {
-    width: 18px;
+    width: 24px;
     height: 18px;
-    background-image: url("../img/icon-menu-cross.svg");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='black' stroke-width='1.5' d='M0-.75h24.76' transform='matrix(.68659 -.72705 .68659 .72705 2 20)'/%3E%3Cpath stroke='black' stroke-width='1.5' d='M0-.75h24.76' transform='matrix(.68659 .72705 -.68659 .72705 1 2)'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -51,7 +55,7 @@
   @media (max-width: @mobile-width-only) {
     width: 24px;
     height: 18px;
-    background-image: url("../img/icon-menu-open.svg");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='18' fill='none' viewBox='0 0 24 18'%3E%3Cpath stroke='black' stroke-width='1.5' d='M0 1.25h24M0 9.25h24M0 17.25h24'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -69,6 +73,11 @@
       left: -20px;
       top: 0;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -103,6 +112,10 @@
   opacity: 0.6;
 }
 
+.site-nav-menu__item:not(.site-nav-menu__item--current):not(.site-nav-menu__item--current-desktop-unique) .site-nav-menu__link:focus {
+  opacity: 0.6;
+}
+
 .site-nav-menu__item:not(.site-nav-menu__item--current):not(.site-nav-menu__item--current-desktop-unique):active {
   opacity: 0.3;
 }
@@ -124,10 +137,12 @@
       height: 2px;
       background-color: @basic-green;
       position: absolute;
-      bottom: -8px;
+      bottom: -10px;
       left: 0;
 
       @media (min-width: @desktop-width) {
+        height: 2px;
+        bottom: -6px;
         background-color: @extra-color-text;
       }
     }

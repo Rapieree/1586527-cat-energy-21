@@ -1,11 +1,3 @@
-.page-main--form {
-  overflow-x: hidden;
-}
-
-.page-main--catalog {
-  overflow-x: hidden;
-}
-
 .page-main__extra-container {
   margin-left: auto;
   margin-right: auto;
@@ -23,7 +15,7 @@
   }
 
   @media (min-width: @max-width) {
-    max-width: @max-width;
+    width: calc(@max-width - 110px * 2);
   }
 }
 
@@ -34,13 +26,10 @@
   .main-font(regular);
   font-size: 36px;
   line-height: 36px;
-  display: block;
-  width: 260px;
 
   @media (min-width: @tablet-width) {
     margin-top: 59px;
     margin-bottom: 54px;
-    width: 432px;
     font-size: 60px;
     line-height: 60px;
   }

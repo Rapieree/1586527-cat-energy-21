@@ -1,10 +1,9 @@
 .example {
   position: relative;
   padding-bottom: 36px;
-  overflow: hidden;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 68px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +23,34 @@
 
     @media (min-width: @tablet-width) {
       top: 57.25%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 29.25%;
+      background-color: @basic-gray;
+    }
+
+    @media (min-width: @max-width) {
+      left: calc(-1 * (100vw - @max-width) / 2);
+      right: calc(-1 * ((100vw - @max-width) / 2));
+    }
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      top: 29.25%;
+      bottom: 0;
+      right: 0;
+      left: 72.6%;
+      background-color: @extra-gray;
+      z-index: -1;
+    }
+
+    @media (min-width: @max-width) {
+      left: 72.7%;
+      right: calc(-1 * ((100vw - @max-width) / 2));
     }
   }
 }
@@ -71,8 +98,6 @@
   line-height: 18px;
   color: @special-color-gray;
 
-  width: calc(100% - 2px);
-
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -100,7 +125,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 366px;
+    width: auto;
     margin: 0;
   }
 }
@@ -160,6 +185,10 @@
     width: 114px;
     left: calc(50% - 114px / 2 - 1px);
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-gray;
+  }
 }
 
 .example__period {
@@ -203,8 +232,8 @@
   text-align: center;
   position: absolute;
   top: calc(100% - 8px);
-  background-color: @extra-gray;
   left: calc(50% - 87px / 2);
+  background-color: @extra-gray;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -212,6 +241,10 @@
     background-color: @main-color-background;
     width: 142px;
     left: calc(50% - 142px / 2 - 1px);
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-gray;
   }
 }
 
@@ -235,11 +268,15 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 327px;
+    width: 100%;
     text-align: left;
     margin-top: 55px;
     margin-left: 0;
+  }
+}
+
+.example__expense-number {
+  @media (min-width: @desktop-width) {
+    margin-left: 58px;
   }
 }
