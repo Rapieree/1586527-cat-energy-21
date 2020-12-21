@@ -1,3 +1,18 @@
+.logo__picture {
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 61px;
+    height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 71px;
+    height: 59px;
+  }
+}
+
 .logo__picture-link {
   width: min-content;
   height: min-content;
@@ -15,6 +30,10 @@
 }
 
 .logo__picture-link:hover, .logo__text-link:hover {
+  opacity: 0.8;
+}
+
+.logo__picture-link:focus, .logo__text-link:focus {
   opacity: 0.8;
 }
 
