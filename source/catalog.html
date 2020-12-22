@@ -293,48 +293,51 @@
         </li>
       </ul>
     </section>
+
     <section class="extra-products">
       <h2 class="extra-products__title">Дополнительные товары</h2>
-      <ul class="extra-products__list">
-        <li class="extra-products__item">
-          <h3 class="extra-products__name">Сахарозаменитель</h3>
-          <div class="extra-products__block">
-            <p class="extra-products__description">1 упаковка (100 г)</p>
-            <p class="extra-products__price">200 Р.</p>
-          </div>
-          <a class="extra-products__link-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-products__name">Питьевая вода</h3>
-          <div class="extra-products__block">
-            <p class="extra-products__description">5 литров</p>
-            <p class="extra-products__price">50 Р.</p>
-          </div>
-          <a class="extra-products__link-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-products__name">Молоко</h3>
-          <div class="extra-products__block">
-            <p class="extra-products__description">1 литр</p>
-            <p class="extra-products__price">100 Р.</p>
-          </div>
-          <a class="extra-products__link-order" href="#">Заказать</a>
-        </li>
-        <li class="extra-products__item">
-          <h3 class="extra-products__name">Витамины</h3>
-          <div class="extra-products__block">
-            <p class="extra-products__description">1 упаковка (30 г)</p>
-            <p class="extra-products__price">300 Р.</p>
-          </div>
-          <a class="extra-products__link-order" href="#">Заказать</a>
-        </li>
-      </ul>
+      <div class="extra-products__wrapper">
+        <ul class="extra-products__list">
+          <li class="extra-products__item">
+            <h3 class="extra-products__name">Сахарозаменитель</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 упаковка (100 г)</p>
+              <p class="extra-products__price">200 Р.</p>
+            </div>
+            <a class="extra-products__link-order" href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-products__name">Питьевая вода</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">5 литров</p>
+              <p class="extra-products__price">50 Р.</p>
+            </div>
+            <a class="extra-products__link-order" href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-products__name">Молоко</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 литр</p>
+              <p class="extra-products__price">100 Р.</p>
+            </div>
+            <a class="extra-products__link-order" href="#">Заказать</a>
+          </li>
+          <li class="extra-products__item">
+            <h3 class="extra-products__name">Витамины</h3>
+            <div class="extra-products__block">
+              <p class="extra-products__description">1 упаковка (30 г)</p>
+              <p class="extra-products__price">300 Р.</p>
+            </div>
+            <a class="extra-products__link-order" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="extra-products__gift gift">
+          <a class="gift__link" href="#">
+            <h2 class="gift__title">Закажите все <br>и получите чехол для кота в подарок!</h2>
+          </a>
+        </div>
+      </div>
     </section>
-    <aside class="gift">
-      <a class="gift__link" href="#">
-        <h2 class="gift__title">Закажите все <br>и получите чехол для кота в подарок!</h2>
-      </a>
-    </aside>
   </main>
   <footer class="page-footer">
     <section class="contacts">
@@ -348,12 +351,15 @@
       </div>
       <a class="contacts__map-link" href="https://goo.gl/maps/fnp3LEbYraQDoAuw7" title="">
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-          <img class="contacts__map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img class="contacts__map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
       </a>
     </section>

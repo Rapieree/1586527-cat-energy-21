@@ -1,12 +1,35 @@
 .gift {
-  margin-bottom: 35px;
   box-sizing: border-box;
-  padding-top: 187px;
   height: 289px;
-  background-image: url("../img/gift-cat.jpg");
+  background-color: @basic-green;
+  background-image: url("../img/gift-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-cat-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 200px;
+    background-image: url("../img/gift-cat-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
+    height: 289px;
+    background-image: url("../img/gift-cat-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-desktop@2x.jpg");
+    }
+  }
 
   &::before {
     content: "";
@@ -18,7 +41,27 @@
     top: 58px;
     left: calc(50% - 78px / 2);
     z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 82px;
+      top: 57px;
+      left: 78px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
+}
+
+.gift:hover {
+  opacity: 0.7;
+}
+
+.gift:active {
+  opacity: 0.5;
 }
 
 .gift__link {
@@ -33,10 +76,23 @@
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 187px;
   .extra-font();
   font-size: 16px;
   line-height: 20px;
   color: @extra-color-text;
   width: 161px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 71px;
+    margin-right: 124px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    margin-right: auto;
+    text-align: center;
+  }
 }
