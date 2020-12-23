@@ -10,7 +10,6 @@ const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -56,7 +55,7 @@ exports.scripts = scripts;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
     .pipe(imagemin([
       imagemin.mozjpeg({quality: 80, progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
@@ -154,6 +153,7 @@ exports.default = gulp.series(
     html,
     scripts,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
