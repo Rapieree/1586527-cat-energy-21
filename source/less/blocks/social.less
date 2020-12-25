@@ -18,6 +18,7 @@
 
 .social__picture--vk {
   fill: @special-color-gray-2;
+
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
@@ -26,6 +27,7 @@
 
 .social__picture--instagram {
   fill: @special-color-gray-2;
+
   @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
@@ -34,21 +36,23 @@
 
 .social__picture--facebook {
   stroke: @special-color-gray-2;
+
   @media (min-width: @tablet-width) {
     width: 20px;
     height: 28px;
   }
 }
 
-.social__link:not(.social__link--facebook):hover .social__picture, .social__link:not(.social__link--facebook):focus .social__picture {
+.social__link:not(.social__link--facebook):hover .social__picture,
+.social__link:not(.social__link--facebook):focus .social__picture {
   fill: @basic-green;
 }
 
-.social__link.social__link--facebook:hover .social__picture, .social__link.social__link--facebook:focus .social__picture{
+.social__link.social__link--facebook:hover .social__picture,
+.social__link.social__link--facebook:focus .social__picture {
   stroke: @basic-green;
 }
 
 .social__link:active .social__picture {
   opacity: 0.3;
 }
-

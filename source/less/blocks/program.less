@@ -37,7 +37,9 @@
   align-items: center;
 }
 
-.program__cat-name-label, .program__cat-weight-label, .program__cat-age-label {
+.program__cat-name-label,
+.program__cat-weight-label,
+.program__cat-age-label {
   .main-font(regular);
   line-height: 18px;
   color: @special-color-gray;
@@ -51,7 +53,9 @@
   }
 }
 
-.program__cat-name, .program__cat-weight, .program__cat-age {
+.program__cat-name,
+.program__cat-weight,
+.program__cat-age {
   padding-top: 13px;
   padding-bottom: 12px;
   padding-left: 15px;
@@ -84,11 +88,15 @@
   }
 }
 
-.program__cat-name:hover, .program__cat-weight:hover, .program__cat-age:hover {
+.program__cat-name:hover,
+.program__cat-weight:hover,
+.program__cat-age:hover {
   border-color: @border-color;
 }
 
-.program__cat-name:focus, .program__cat-weight:focus, .program__cat-age:focus {
+.program__cat-name:focus,
+.program__cat-weight:focus,
+.program__cat-age:focus {
   outline: 2px solid @special-color-gray;
 }
 
@@ -234,6 +242,7 @@
 
 .program__categories-input:disabled + label {
   opacity: 0.3;
+
   &::before {
     border-color: @radio-hover-color;
   }
@@ -390,7 +399,8 @@
   position: relative;
 }
 
-.program__email-label span, .program__phone-label span {
+.program__email-label span,
+.program__phone-label span {
   margin-top: -5px;
 }
 
@@ -476,11 +486,13 @@
   }
 }
 
-.program__email:hover, .program__phone:hover {
+.program__email:hover,
+.program__phone:hover {
   border-color: @border-color;
 }
 
-.program__email:focus, .program__phone:focus {
+.program__email:focus,
+.program__phone:focus {
   outline: 2px solid @special-color-gray;
 }
 
@@ -536,7 +548,7 @@
   color: @special-color-gray;
   border: 1px solid @border-gray-2;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-top: 10px;
@@ -553,7 +565,7 @@
     color: @special-color-gray;
     text-transform: uppercase;
 
-    @media(min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
       font-size: 20px;
       line-height: 30px;
     }
@@ -726,7 +738,8 @@
   }
 }
 
-.program__button:hover, .program__button:focus {
+.program__button:hover,
+.program__button:focus {
   background-color: @basic-green-2;
 }
 
