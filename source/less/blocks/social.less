@@ -1,5 +1,4 @@
 .social {
-  padding-right: 4px;
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -8,11 +7,19 @@
   gap: 34px;
 
   @media (min-width: @tablet-width) {
-    padding-right: 0;
-    margin-left: 20px;
+    margin-left: 24px;
     flex-wrap: nowrap;
-    gap: 24px;
+    gap: 22px;
     align-items: flex-end;
+  }
+}
+
+.social__item:nth-child(1) {
+  margin-left: -3px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 5px;
   }
 }
 
@@ -38,8 +45,8 @@
   stroke: @special-color-gray-2;
 
   @media (min-width: @tablet-width) {
-    width: 20px;
-    height: 28px;
+    width: 28px;
+    height: 29px;
   }
 }
 

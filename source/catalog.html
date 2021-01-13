@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="fonts/oswaldregular.woff2" as="font" rel="preload">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="page__container page-header">
+  <header class="page-header page__container">
     <h1 class="visually-hidden">"Кэт Энерджи" - функциональное питание для котов!</h1>
     <div class="page-header__logo logo">
       <a class="page-header__logo-picture-link logo__picture-link" href="index.html">
@@ -25,8 +26,8 @@
       </a>
     </div>
     <nav class="site-nav-menu">
-      <button class="page-header__menu-button site-nav-menu__button site-nav-menu__button--open" type="button"
-        aria-expanded="true" aria-controls="site-nav-menu__list">
+      <button class="page-header__menu-button site-nav-menu__button" type="button" aria-expanded="true"
+        aria-controls="site-nav-menu__list">
         <span class="visually-hidden">Меню</span>
         <svg class="site-nav-menu__icon" width="24" height="16" aria-hidden="true">
         </svg>
@@ -50,22 +51,24 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/chicken500gr-desktop.webp 1x, img/catalog/chicken500gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/chicken500gr-tablet.webp 1x, img/catalog/chicken500gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/chicken500gr-mobile.webp 1x, img/catalog/chicken500gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/chicken500gr-desktop.jpg 1x, img/catalog/chicken500gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/chicken500gr-tablet.jpg 1x, img/catalog/chicken500gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/chicken500gr-mobile.jpg"
-                srcset="img/catalog/chicken500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO chicken 500 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/chicken500gr-desktop.webp 1x, img/catalog/chicken500gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/chicken500gr-tablet.webp 1x, img/catalog/chicken500gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/chicken500gr-mobile.webp 1x, img/catalog/chicken500gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/chicken500gr-desktop.jpg 1x, img/catalog/chicken500gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/chicken500gr-tablet.jpg 1x, img/catalog/chicken500gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/chicken500gr-mobile.jpg"
+                  srcset="img/catalog/chicken500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO chicken 500 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy PRO 500 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy PRO 500 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -84,22 +87,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/chicken1000gr-desktop.webp 1x, img/catalog/chicken1000gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/chicken1000gr-tablet.webp 1x, img/catalog/chicken1000gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/chicken1000gr-mobile.webp 1x, img/catalog/chicken1000gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/chicken1000gr-desktop.jpg 1x, img/catalog/chicken1000gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/chicken1000gr-tablet.jpg 1x, img/catalog/chicken1000gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/chicken1000gr-mobile.jpg"
-                srcset="img/catalog/chicken1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO chicken 1000 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/chicken1000gr-desktop.webp 1x, img/catalog/chicken1000gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/chicken1000gr-tablet.webp 1x, img/catalog/chicken1000gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/chicken1000gr-mobile.webp 1x, img/catalog/chicken1000gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/chicken1000gr-desktop.jpg 1x, img/catalog/chicken1000gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/chicken1000gr-tablet.jpg 1x, img/catalog/chicken1000gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/chicken1000gr-mobile.jpg"
+                  srcset="img/catalog/chicken1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO chicken 1000 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy PRO 1000 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy PRO 1000 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -118,22 +123,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/fish500gr-desktop.webp 1x, img/catalog/fish500gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/fish500gr-tablet.webp 1x, img/catalog/fish500gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/fish500gr-mobile.webp 1x, img/catalog/fish500gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/fish500gr-desktop.jpg 1x, img/catalog/fish500gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/fish500gr-tablet.jpg 1x, img/catalog/fish500gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/fish500gr-mobile.jpg"
-                srcset="img/catalog/fish500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO fish 500 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/fish500gr-desktop.webp 1x, img/catalog/fish500gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/fish500gr-tablet.webp 1x, img/catalog/fish500gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/fish500gr-mobile.webp 1x, img/catalog/fish500gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/fish500gr-desktop.jpg 1x, img/catalog/fish500gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/fish500gr-tablet.jpg 1x, img/catalog/fish500gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/fish500gr-mobile.jpg"
+                  srcset="img/catalog/fish500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO fish 500 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy PRO 500 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy PRO 500 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -152,22 +159,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/fish1000gr-desktop.webp 1x, img/catalog/fish1000gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/fish1000gr-tablet.webp 1x, img/catalog/fish1000gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/fish1000gr-mobile.webp 1x, img/catalog/fish1000gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/fish1000gr-desktop.jpg 1x, img/catalog/fish1000gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/fish1000gr-tablet.jpg 1x, img/catalog/fish1000gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/fish1000gr-mobile.jpg"
-                srcset="img/catalog/fish1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO fish 1000 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/fish1000gr-desktop.webp 1x, img/catalog/fish1000gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/fish1000gr-tablet.webp 1x, img/catalog/fish1000gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/fish1000gr-mobile.webp 1x, img/catalog/fish1000gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/fish1000gr-desktop.jpg 1x, img/catalog/fish1000gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/fish1000gr-tablet.jpg 1x, img/catalog/fish1000gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/fish1000gr-mobile.jpg"
+                  srcset="img/catalog/fish1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO fish 1000 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy PRO 1000 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy PRO 1000 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -186,22 +195,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/buckwheat500gr-desktop.webp 1x, img/catalog/buckwheat500gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat500gr-tablet.webp 1x, img/catalog/buckwheat500gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/buckwheat500gr-mobile.webp 1x, img/catalog/buckwheat500gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/buckwheat500gr-desktop.jpg 1x, img/catalog/buckwheat500gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat500gr-tablet.jpg 1x, img/catalog/buckwheat500gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/buckwheat500gr-mobile.jpg"
-                srcset="img/catalog/buckwheat500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO buckwheat 500 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/buckwheat500gr-desktop.webp 1x, img/catalog/buckwheat500gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/buckwheat500gr-tablet.webp 1x, img/catalog/buckwheat500gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/buckwheat500gr-mobile.webp 1x, img/catalog/buckwheat500gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/buckwheat500gr-desktop.jpg 1x, img/catalog/buckwheat500gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/buckwheat500gr-tablet.jpg 1x, img/catalog/buckwheat500gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/buckwheat500gr-mobile.jpg"
+                  srcset="img/catalog/buckwheat500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO buckwheat 500 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy Slim 500 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy Slim 500 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -220,22 +231,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/buckwheat1000gr-desktop.webp 1x, img/catalog/buckwheat1000gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat1000gr-tablet.webp 1x, img/catalog/buckwheat1000gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/buckwheat1000gr-mobile.webp 1x, img/catalog/buckwheat1000gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/buckwheat1000gr-desktop.jpg 1x, img/catalog/buckwheat1000gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/buckwheat1000gr-tablet.jpg 1x, img/catalog/buckwheat1000gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/buckwheat1000gr-mobile.jpg"
-                srcset="img/catalog/buckwheat1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO buckwheat 1000 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/buckwheat1000gr-desktop.webp 1x, img/catalog/buckwheat1000gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/buckwheat1000gr-tablet.webp 1x, img/catalog/buckwheat1000gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/buckwheat1000gr-mobile.webp 1x, img/catalog/buckwheat1000gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/buckwheat1000gr-desktop.jpg 1x, img/catalog/buckwheat1000gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/buckwheat1000gr-tablet.jpg 1x, img/catalog/buckwheat1000gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/buckwheat1000gr-mobile.jpg"
+                  srcset="img/catalog/buckwheat1000gr-mobile@2x.jpg 2x" alt="Cat Energy PRO buckwheat 1000 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy Slim 1000 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy Slim 1000 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -254,22 +267,24 @@
         </li>
         <li class="catalog__item">
           <figure class="catalog__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="img/catalog/rice500gr-desktop.webp 1x, img/catalog/rice500gr-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/catalog/rice500gr-tablet.webp 1x, img/catalog/rice500gr-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/catalog/rice500gr-mobile.webp 1x, img/catalog/rice500gr-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)"
-                srcset="img/catalog/rice500gr-desktop.jpg 1x, img/catalog/rice500gr-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/catalog/rice500gr-tablet.jpg 1x, img/catalog/rice500gr-tablet@2x.jpg 2x">
-              <img class="catalog__image-img" src="img/catalog/rice500gr-mobile.jpg"
-                srcset="img/catalog/rice500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO rice 500 г">
-            </picture>
+            <a class="catalog__image-link" href="#" title="Перейти на страницу описания товара">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/catalog/rice500gr-desktop.webp 1x, img/catalog/rice500gr-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/rice500gr-tablet.webp 1x, img/catalog/rice500gr-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/catalog/rice500gr-mobile.webp 1x, img/catalog/rice500gr-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/rice500gr-desktop.jpg 1x, img/catalog/rice500gr-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/rice500gr-tablet.jpg 1x, img/catalog/rice500gr-tablet@2x.jpg 2x">
+                <img class="catalog__image-img" src="img/catalog/rice500gr-mobile.jpg"
+                  srcset="img/catalog/rice500gr-mobile@2x.jpg 2x" alt="Cat Energy PRO rice 500 г">
+              </picture>
+            </a>
           </figure>
-          <h2 class="catalog__product-name">Cat Energy Slim 500 г</h2>
+          <h2 class="catalog__product-name"><a class="catalog__product-link" href="#" title="Перейти на страницу описания товара">Cat Energy Slim 500 г</a></h2>
           <table class="catalog__description">
             <tr class="catalog__description-row">
               <td class="catalog__weight">Масса</td>
@@ -389,7 +404,7 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg class="social__picture social__picture--facebook" width="15" height="20">
+            <svg class="social__picture social__picture--facebook" width="22" height="20">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -397,7 +412,7 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип-ссылка на HTML Academy">
           <svg class="copyright__img" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
@@ -405,6 +420,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
