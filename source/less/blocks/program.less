@@ -496,20 +496,36 @@
   outline: 2px solid @special-color-gray;
 }
 
-.program__email-icon--success {
+.program__email:required:valid,
+.program__phone:required:valid,
+.program__cat-name:required:valid,
+.program__cat-weight:required:valid {
+  border-color: @basic-green;
+  outline-color: @basic-green;
+}
+
+.program__email:focus:required:invalid,
+.program__phone:focus:required:invalid,
+.program__cat-name:focus:required:invalid,
+.program__cat-weight:focus:required:invalid {
+  border-color: @error-color;
+  outline-color: @error-color;
+}
+
+.program__email:required:valid + .program__email-icon {
   stroke: @basic-green;
 }
 
-.program__email-icon--error {
+.program__phone:required:valid + .program__phone-icon {
+  fill: @basic-green;
+}
+
+.program__email:focus:required:invalid + .program__email-icon {
   stroke: @error-color;
 }
 
-.program__phone-icon--error {
+.program__phone:focus:required:invalid + .program__phone-icon {
   fill: @error-color;
-}
-
-.program__input--error {
-  outline: 2px solid @error-color;
 }
 
 // Блок комментария

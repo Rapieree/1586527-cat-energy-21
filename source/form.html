@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="fonts/oswaldregular.woff2" as="font" rel="preload">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -25,7 +26,7 @@
       </a>
     </div>
     <nav class="site-nav-menu">
-      <button class="page-header__menu-button site-nav-menu__button site-nav-menu__button--open" type="button"
+      <button class="page-header__menu-button site-nav-menu__button" type="button"
         aria-expanded="true" aria-controls="site-nav-menu__list">
         <span class="visually-hidden">Меню</span>
         <svg class="site-nav-menu__icon" width="24" height="16" aria-hidden="true">
@@ -57,17 +58,17 @@
               <div class="program__block">
                 <label class="program__cat-name-label" for="program-cat-name-field">Имя:*</label>
                 <input class="program__cat-name" name="cat-name" type="text" id="program-cat-name-field"
-                  placeholder="Барсик">
+                  placeholder="Барсик" minlength="2" pattern="[^0-9]+$" required>
               </div>
               <div class="program__block">
                 <label class="program__cat-weight-label" for="program-cat-weight-field">Вес (кг):*</label>
                 <input class="program__cat-weight" name="cat-weight" type="number" id="program-cat-weight-field"
-                  placeholder="7">
+                  placeholder="7" min="1" max="30" required>
               </div>
               <div class="program__block">
                 <label class="program__cat-age-label" for="program-cat-height-field">Возраст (лет):</label>
                 <input class="program__cat-age" name="cat-height" type="number" id="program-cat-height-field"
-                  placeholder="7">
+                  placeholder="7" min="0" max="30">
               </div>
             </fieldset>
             <fieldset class="program__categories">
@@ -96,7 +97,7 @@
             <label class="program__email-label" for="program-email-field">
               <span>E-mail:*</span>
               <input class="program__email" name="email" type="email" id="program-email-field"
-                placeholder="kuklachev@gmail.com">
+                placeholder="kuklachev@gmail.com" required>
               <svg class="program__email-icon" width="19" height="14" stroke="#222222">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
@@ -104,7 +105,7 @@
             <label class="program__phone-label" for="program-phone-field">
               <span>Телефон:*</span>
               <input class="program__phone" name="phone" type="tel" id="program-phone-field"
-                placeholder="8 (960) 900-60-90">
+                placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" maxlength="17" title="8 (000) 000-00-00" required>
               <svg class="program__phone-icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -113,7 +114,7 @@
           <fieldset class="program__comment">
             <legend class="program__legend">Комментарий</legend>
             <textarea class="program__comment-text" name="comment"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+              placeholder="Расскажите обо всех повадках кота" aria-label="Поле ввода комментария"></textarea>
           </fieldset>
           <fieldset class="program__extra">
             <legend class="program__legend">Дополнительно</legend>
@@ -195,7 +196,7 @@
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg class="social__picture social__picture--facebook" width="15" height="20">
+            <svg class="social__picture social__picture--facebook" width="22" height="20">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -203,7 +204,7 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип-ссылка на HTML Academy">
           <svg class="copyright__img" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
@@ -211,6 +212,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
