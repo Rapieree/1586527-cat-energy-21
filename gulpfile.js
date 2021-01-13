@@ -153,6 +153,7 @@ exports.default = gulp.series(
     html,
     scripts,
     copy,
+    images,
     createWebp
   ),
   gulp.series(
