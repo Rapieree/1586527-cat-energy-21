@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="fonts/oswaldregular.woff2" as="font" rel="preload">
+  <link href="fonts/oswaldregular.woff2" as="font" rel="preload" crossorigin>
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -26,8 +26,8 @@
       </a>
     </div>
     <nav class="site-nav-menu">
-      <button class="page-header__menu-button site-nav-menu__button" type="button"
-        aria-expanded="true" aria-controls="site-nav-menu__list">
+      <button class="page-header__menu-button site-nav-menu__button" type="button" aria-expanded="true"
+        aria-controls="site-nav-menu__list">
         <span class="visually-hidden">Меню</span>
         <svg class="site-nav-menu__icon" width="24" height="16" aria-hidden="true">
         </svg>
@@ -105,7 +105,8 @@
             <label class="program__phone-label" for="program-phone-field">
               <span>Телефон:*</span>
               <input class="program__phone" name="phone" type="tel" id="program-phone-field"
-                placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off" maxlength="17" title="8 (000) 000-00-00" required>
+                placeholder="8 (960) 900-60-90" pattern="8\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" autocomplete="off"
+                maxlength="17" title="8 (000) 000-00-00" required>
               <svg class="program__phone-icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -113,8 +114,8 @@
           </fieldset>
           <fieldset class="program__comment">
             <legend class="program__legend">Комментарий</legend>
-            <textarea class="program__comment-text" name="comment"
-              placeholder="Расскажите обо всех повадках кота" aria-label="Поле ввода комментария"></textarea>
+            <textarea class="program__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"
+              aria-label="Поле ввода комментария"></textarea>
           </fieldset>
           <fieldset class="program__extra">
             <legend class="program__legend">Дополнительно</legend>
@@ -161,12 +162,15 @@
       </div>
       <a class="contacts__map-link" href="https://goo.gl/maps/fnp3LEbYraQDoAuw7" title="">
         <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
-          <img class="contacts__map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <img class="contacts__map" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x"
+            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </picture>
       </a>
     </section>
@@ -204,7 +208,8 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип-ссылка на HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Логотип-ссылка на HTML Academy">
           <svg class="copyright__img" width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
           </svg>
